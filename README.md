@@ -4,7 +4,7 @@ O objetivo do website é prover informações acerca do Índice de Massa Corpora
 
 O Projeto foi exposto na Feira de Profissões do Colégio Americano Batista / Aracaju-SE.
 
-- Aspectos_Técnicos:
+## Aspectos_Técnicos:
 Um projeto criado com **HTML**, **CSS** e **Javascript**, utilizando conhecimentos básicos de desenvolvimento web para elaboração, onde apresenta as seguintes funcionalidades: Informações textuais sobre o assunto com HTML, estilização geral com CSS e ações de cálculos e dados com Javascript.
 
 Desenvolvedor: Caio Machado
