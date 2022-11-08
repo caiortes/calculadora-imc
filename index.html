@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt_br"> 
+<html lang="pt_br">
+
 <head>
-<!-- PAGE -->
+  <!-- PAGE -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O QUE É IMC?</title>
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-	<main>
+  <main>
 
-<!--TEXT-->
+    <!--TEXT-->
 
-  <div class="text">
-    <h1>IMC : O que é? Porque é importante? Como calcular? Quais os valores ideais para cada idade?</h1>
+    <div class="text">
+      <h1>IMC : O que é? Porque é importante? Como calcular? Quais os valores ideais para cada idade?</h1>
       <hr>
-    <h2>O que é IMC ?</h2>
-    <p>
-    O IMC ( Índice de massa corporal) é um cálculo simples que permite avaliar se a pessoa está dentro
-    do peso que é considerado ideal para a sua altura.
-    <p>
-    Esta é uma fórmula simples que vários profissionais de saúde, incluindo médicos, enfermeiros e nutricionistas,
-    usam para saber, de uma forma rápida, se a pessoa precisa ganhar ou perder peso.
-    Isso porque, tanto o excesso de peso, como a falta, podem trazer diversas consequências para a saúde,
-    desde desnutrição até ao aumento do risco de infartos ou AVC.
-    <p>
-    Embora seja uma ferramenta muito comum, o IMC não é considerada a forma mais exata de avaliar o peso,
-    já que não leva em consideração a composição corporal. Por isso, é comum que no caso de atletas 
-    (que possuem uma maior quantidade de massa muscular) seja aconselhado o uso de outras técnicas para uma
-    avaliação mais detalhada do peso.
-    <br>
+      <h2>O que é IMC ?</h2>
+      <p>
+        O IMC ( Índice de massa corporal) é um cálculo simples que permite avaliar se a pessoa está dentro
+        do peso que é considerado ideal para a sua altura.
+      <p>
+        Esta é uma fórmula simples que vários profissionais de saúde, incluindo médicos, enfermeiros e nutricionistas,
+        usam para saber, de uma forma rápida, se a pessoa precisa ganhar ou perder peso.
+        Isso porque, tanto o excesso de peso, como a falta, podem trazer diversas consequências para a saúde,
+        desde desnutrição até ao aumento do risco de infartos ou AVC.
+      <p>
+        Embora seja uma ferramenta muito comum, o IMC não é considerada a forma mais exata de avaliar o peso,
+        já que não leva em consideração a composição corporal. Por isso, é comum que no caso de atletas
+        (que possuem uma maior quantidade de massa muscular) seja aconselhado o uso de outras técnicas para uma
+        avaliação mais detalhada do peso.
+        <br>
       <h2>Porque é importante saber o seu IMC ?</h2>
 
       <p>
         Estar dentro do peso ideal é importante para a promoção da saúde,
-        visando a prevenção de doenças e garantir a qualidade de vida. 
+        visando a prevenção de doenças e garantir a qualidade de vida.
         Por isso, ao estar abaixo do peso o indicado é buscar o aumento do volume muscular para aumentar
         de peso de forma saudável. E para quem está acima do peso o indicado é que haja busca por hábitos saudáveis
         associados à atividade física, para obter uma saúde melhor.
-      <br>
+        <br>
 
       <p>
         Através do cálculo do seu Índice de Massa Corporal,
@@ -56,95 +58,81 @@
       <h2>Como Calcular ?</h2>
 
       <p>
-        O cálculo do IMC é feito dividindo o peso pela altura ao quadrado. 
+        O cálculo do IMC é feito dividindo o peso pela altura ao quadrado.
         No entanto, você pode utilizar nossa calculadora abaixo e saber qual é o seu peso ideal.
-  </div>
+    </div>
 
-<!-- Calculadora-->
+    <!-- Calculadora-->
+    <form id="myForm">
+      <div class="forms">
+        <div id="form-area">
 
-    <div class="forms">
-<div id="form-area">
+          <h2 id="title">Calculadora IMC</h2>
 
-<h2 id="title">Calculadora IMC</h2>
+          <p>
+            <label for="peso">Peso (Kg)</label> <br>
+            <input type="number" id="peso" placeholder="Inserir Peso">
+          </p>
+          <label for="altura">Altura (Cm)</label>
+          <input type="number" id="altura" placeholder="Inserir Altura">
 
-<p>
-  <label for="peso">Peso (Kg)</label> <br>
-  <input type="number" id="peso" placeholder="Inserir Peso"> 
-</p>
-  <label for="altura">Altura (Cm)</label>
-  <input type="number" id="altura" placeholder="Inserir Altura">
+          <button type="button" class="button-calcular" onclick="calculate()">Calcular</button>
 
+          <div id="resultado">
+          </div>
 
-<button type="button" class="button-calcular" onclick="calculate()">Calcular</button>
+          <button type="reset" id="button-reset">Limpar Resultado</button>
 
-<div id="resultado">
-    <a id="result"></a>
-</div>
+        </div>
+      </div>
+    </form>
 
-  </div>
-</div>
+    <!--Texto-->
 
-<!--Texto-->
+    <div class="text">
 
-<div class="text">
-  
-  <h2>Saiba o que significa cada resultado do IMC </h2>
-  <p>
+      <h2>Saiba o que significa cada resultado do IMC </h2>
+      <p>
       <h3>IMC menor do que 18,5</h3>
-  <p>
-    Peso abaixo do normal. Neste caso, é necessária a busca por um especialista, para verificar
-    a existência de algum problema de saúde causador do índice abaixo do normal, ou analisar
-    se sua saúde não está sendo afetada.
-  <p>
+      <p>
+        Peso abaixo do normal. Neste caso, é necessária a busca por um especialista, para verificar
+        a existência de algum problema de saúde causador do índice abaixo do normal, ou analisar
+        se sua saúde não está sendo afetada.
+      <p>
       <h3>IMC entre 18,5 e 24,9</h3>
-  <p>
-    São pesos considerados normais pela OMS. No entanto, mesmo nesta faixa de peso, deve-se ter atenção
-    e cuidado com possíveis problemas metabólicos, principalmente se houver acúmulo de gordura
-    na região interna do abdômen.
-  <p>
+      <p>
+        São pesos considerados normais pela OMS. No entanto, mesmo nesta faixa de peso, deve-se ter atenção
+        e cuidado com possíveis problemas metabólicos, principalmente se houver acúmulo de gordura
+        na região interna do abdômen.
+      <p>
       <h3>IMC entre 25 a 29,9</h3>
-  <p>
-    Peso em pré-obesidade ou acima do peso, representando um risco maior para a saúde.
-    Nesta causa, é imprescindível uma consulta com um especialista, pois pode estar relacionado
-    à pressão alta, colesterol alto ou diabetes, podendo apontar até para o hipotireoidismo.
-    Este é o seu índice? Se sim, é tempo de consultar um profissional, realizar exames e pensar
-    em uma reeducação alimentar e exercícios físicos. 
-  <p>
+      <p>
+        Peso em pré-obesidade ou acima do peso, representando um risco maior para a saúde.
+        Nesta causa, é imprescindível uma consulta com um especialista, pois pode estar relacionado
+        à pressão alta, colesterol alto ou diabetes, podendo apontar até para o hipotireoidismo.
+        Este é o seu índice? Se sim, é tempo de consultar um profissional, realizar exames e pensar
+        em uma reeducação alimentar e exercícios físicos.
+      <p>
       <h3>IMC entre 30 a 34,9</h3>
-  <p>
-    Indica obesidade grau dois. Este peso já representa risco elevado para as doenças supracitadas.
-    Como em todos os casos, mas neste impreterivelmente, deve-se buscar um profissional especializado
-    e receber as orientações e medidas adequadas para obter uma saúde equilibrada.
-  <p>
+      <p>
+        Indica obesidade grau dois. Este peso já representa risco elevado para as doenças supracitadas.
+        Como em todos os casos, mas neste impreterivelmente, deve-se buscar um profissional especializado
+        e receber as orientações e medidas adequadas para obter uma saúde equilibrada.
+      <p>
       <h3>IMC a partir de 40,0</h3>
-  <p>
-    Indica obesidade grau três ou mórbida. O peso neste grau apresenta problemas extremamente graves
-    e necessita de tratamento profissional com o máximo de recursos disponíveis, incluindo até cirurgia.
-  <br>
+      <p>
+        Indica obesidade grau três ou mórbida. O peso neste grau apresenta problemas extremamente graves
+        e necessita de tratamento profissional com o máximo de recursos disponíveis, incluindo até cirurgia.
+    </div>
 
-  <h2>Qual o IMC ideal para cada idade?</h2>
-  <p>
-    O resultado do IMC muda a partir dos 60 anos de idade. Isso ocorre, principalmente,
-    pela composição corporal dos mais velhos. Nessa faixa etária, pode acontecer uma redução
-    a altura devido à compressão vertebral, à perda do tônus muscular e a alterações posturais.
-  <p>
-    Além disso, também é comum a redução do peso, pela diminuição da água corporal e da massa muscular.
-    Pode ser registrado, também, aumento da gordura corporal, com maior concentração na
-    região abdominal. As alterações ósseas, devidas à osteoporose, também interferem.
-  <p>
-    Nesses casos, o Ministério da Saúde (MS) recomenda o chamado padrão de Lipschitz.
-    Nela, os valores abaixo de 21,9 são considerados baixo peso. Entre 22 e 26,9, o peso está adequado.
-    A partir de 27, a pessoa tem sobrepeso.
-    <br>
-</div>
+    <footer class="section">
+      <div class="footer">
+        Feira De Profissões 2022 / CAB
+    </footer>
 
-<footer class="section">
-<div class="footer">
-  Feira De Profissões 2022 / CAB
-</footer>
-
-</main>
+  </main>
 </body>
 <script src="test.js"></script>
 </body>
-</html> 
+
+</html>
