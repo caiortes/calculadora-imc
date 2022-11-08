@@ -29,8 +29,10 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Desenvolvedor: Caio Machado
-Linkedin: https://www.linkedin.com/in/caio-machado-2021/
+Desenvolvedor: Caio Machado 
+<br>
+Linkedin: https://www.linkedin.com/in/caio-machado-2021/ 
+<br>
 Email: caiortes.machado@gmail.com
 
 
