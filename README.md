@@ -1,6 +1,6 @@
 <h1 align="center"> Projeto Calculadora-IMC </h1>
 
-<p align="center">
+<p align="left">
 O objetivo do website é prover informações acerca do Índice de Massa Corporal (IMC), o qual é amplamente utilizado para avaliação nutricional, visando a prevenção de doenças.
 
 O Projeto foi exposto na Feira de Profissões do Colégio Americano Batista / Aracaju-SE.
